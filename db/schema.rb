@@ -13,9 +13,9 @@
 ActiveRecord::Schema.define(version: 2021_05_26_085349) do
 
   create_table "shops", charset: "utf8mb4", force: :cascade do |t|
-    t.string "name"
-    t.string "email"
-    t.string "password_digest"
+    t.string "name", null: false
+    t.string "email", null: false
+    t.string "password_digest", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
